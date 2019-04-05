@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52312/Shinyak_WS/OrderService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:import schemaLocation="http://localhost:52312/Shinyak_WS/OrderService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="CusLoanTeamLeaderReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q1:CusLoanRegModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanTeamLeaderRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanTeamLeaderRegResult" nillable="true" type="q2:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanCalc_new">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strHwanAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strHwanAmt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strHwanAmt2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strBaseAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAddAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strLoanAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMcAmt" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanCalc_newResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="CusLoanCalc_newResult" nillable="true" type="q3:ArrayOfCusLoanCalcModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanCalc_new2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strHwanAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strHwanAmt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strHwanAmt2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strBaseAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAddAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strLoanAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMcAmt" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanCalc_new2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="CusLoanCalc_new2Result" nillable="true" type="q4:ArrayOfCusLoanCalcModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanReg_new">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q5:CusLoanRegModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanReg_newResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanReg_newResult" nillable="true" type="q6:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanReg_new2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q7:CusLoanRegModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanReg_new2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanReg_new2Result" nillable="true" type="q8:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoanCusRev_new">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoanCusRev_newResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="LoanCusRev_newResult" nillable="true" type="q9:ArrayOfCusLoanModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoanCusRev_new2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoanCusRev_new2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="LoanCusRev_new2Result" nillable="true" type="q10:ArrayOfCusLoanModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanTeamLeaderReg_new">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q11:CusLoanRegModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanTeamLeaderReg_newResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanTeamLeaderReg_newResult" nillable="true" type="q12:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdCusGrade">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdCusGradeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdCusGradeResult" nillable="true" type="q13:ArrayOfCusProdGrade_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdCusGradeReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="model" nillable="true" type="q14:CusProdGradeReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdCusGradeRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderProdCusGradeRegResult" nillable="true" type="q15:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMMDD1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YYMMDD2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_KS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="MKTOrderRevResult" nillable="true" type="q16:ArrayOfOrderMKTRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q17:OrderMKTReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MKTOrderRegResult" nillable="true" type="q18:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderProdRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_GOOD_NAME" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderProdRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="MKTOrderProdRevResult" nillable="true" type="q19:ArrayOfOrderMKTProdRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderKyulRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderKyulRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="MKTOrderKyulRevResult" nillable="true" type="q20:ArrayOfOrderMKTRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderKyulReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="model" nillable="true" type="q21:OrderMKTKyul_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderKyulRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MKTOrderKyulRegResult" nillable="true" type="q22:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderModify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="model" nillable="true" type="q23:OrderMKTModQty_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderModifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MKTOrderModifyResult" nillable="true" type="q24:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderSil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_GOOD_CD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MKTOrderSilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="MKTOrderSilResult" nillable="true" type="q25:ArrayOfOrderMKTSil_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Order_Domae_Qty">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_GOOD_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_QTY" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Order_Domae_QtyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Order_Domae_QtyResult" nillable="true" type="q26:ArrayOfOrderDomaeQty_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Order_Code">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sUSERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Order_CodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Order_CodeResult" nillable="true" type="q27:ArrayOfOrderCode_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevDateResult" nillable="true" type="q28:ArrayOfOrderRevDate_ReturnToo_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevDate_Rev1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_DEPT_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_GBN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_GBN_DTL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USER_ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevDate_Rev1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevDate_Rev1Result" nillable="true" type="q29:ArrayOfOrderRevDate_ReturnToo_Info_Rv1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMMDD1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YYMMDD2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevResult" nillable="true" type="q30:ArrayOfOrderRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRev_Rev1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRev_Rev1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRev_Rev1Result" nillable="true" type="q31:ArrayOfOrderRev_Info_Rv1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevDetailResult" nillable="true" type="q32:ArrayOfOrderRevDetail_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevDetail_Rev1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ARG_10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevDetail_Rev1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevDetail_Rev1Result" nillable="true" type="q33:ArrayOfOrderRevDetail_Info_Rv1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMMDD1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YYMMDD2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YN1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YN2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_JP_ST" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderAppRevResult" nillable="true" type="q34:ArrayOfOrderAppRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRevDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRevDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderAppRevDetailResult" nillable="true" type="q35:ArrayOfOrderAppRevDetail_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevCusSil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevCusSilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevCusSilResult" nillable="true" type="q36:ArrayOfOrderRevCusSil_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevCus_Check">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUST_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_D_CUST_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ITEM_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_GBN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_GBN_DTL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YMD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_QTY" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_AMT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_KS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_BAESONG" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USER_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CLIENT_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YESAN_USER" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN_DTL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN_DTL1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_SALE_EMP_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevCus_CheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevCus_CheckResult" nillable="true" type="q37:ArrayOfOrderRevCCInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevItem_Check">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUST_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_D_CUST_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ITEM_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_GBN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_GBN_DTL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YMD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_QTY" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_AMT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_KS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_BAESONG" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USER_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CLIENT_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YESAN_USER" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN_DTL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN_DTL1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_SALE_EMP_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevItem_CheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevItem_CheckResult" nillable="true" type="q38:ArrayOfOrderRevCus_Check_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevItemQty_Check">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUST_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_D_CUST_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ITEM_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_GBN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_GBN_DTL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YMD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_QTY" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_AMT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_KS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_BAESONG" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USER_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CLIENT_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YESAN_USER" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN_DTL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_UT_GBN_DTL1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_SALE_EMP_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevItemQty_CheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevItemQty_CheckResult" nillable="true" type="q39:ArrayOfOrderRevCus_Check_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevCenter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_EMP_CD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRevCenterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderRevCenterResult" nillable="true" type="q40:ArrayOfOrderRevCCInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q41:OrderReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderRegResult" nillable="true" type="q42:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderReg20111013">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q43:OrderReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderReg20111013Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderReg20111013Result" nillable="true" type="q44:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRevAbnormal2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRevAbnormal2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderAppRevAbnormal2Result" nillable="true" type="q45:ArrayOfOrderAppRevAbnormal2_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRevAbnormal1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRevAbnormal1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderAppRevAbnormal1Result" nillable="true" type="q46:ArrayOfOrderAppRevAbnormal1_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdDiscountRevClient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdDiscountRevClientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdDiscountRevClientResult" nillable="true" type="q47:ArrayOfOrderProdDiscountRevClient_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdDiscountRevProd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YMD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdDiscountRevProdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdDiscountRevProdResult" nillable="true" type="q48:ArrayOfOrderProdDiscountRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRevClient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_SANGHO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRevClientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderOTCRevClientResult" nillable="true" type="q49:ArrayOfOrderOTCRevClient_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RevOTCProd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CODE_NAME" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RevOTCProdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="RevOTCProdResult" nillable="true" type="q50:ArrayOfRevProd_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRevBudget">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRevBudgetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderOTCRevBudgetResult" nillable="true" type="q51:ArrayOfOrderOTCRevBudget_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q52:OrderReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderOTCRegResult" nillable="true" type="q53:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRegTEST">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderRegTESTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderRegTESTResult" nillable="true" type="q54:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMMDD1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YYMMDD2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderOTCRevResult" nillable="true" type="q55:ArrayOfOrderOTCRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRevDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderOTCRevDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderOTCRevDetailResult" nillable="true" type="q56:ArrayOfOrderOTCRevDetail_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegPass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParameter_Info" nillable="true" type="q57:OrderAppRegPass_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegPassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderAppRegPassResult" nillable="true" type="q58:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegPassGetType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_P_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_P_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegPassGetTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderAppRegPassGetTypeResult" nillable="true" type="q59:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegPassAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParameter_Info" nillable="true" type="q60:OrderAppRegPassAll_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegPassAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderAppRegPassAllResult" nillable="true" type="q61:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegPassAlltest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegPassAlltestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderAppRegPassAlltestResult" nillable="true" type="q62:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegBukyul_Info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParameter_Info" nillable="true" type="q63:OrderAppRegBukyul_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderAppRegBukyul_InfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderAppRegBukyul_InfoResult" nillable="true" type="q64:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdDiscountReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdDiscountReg_Info" nillable="true" type="q65:OrderProdDiscountReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdDiscountRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderProdDiscountRegResult" nillable="true" type="q66:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdDiscountUploadSign">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParameter_Info" nillable="true" type="q67:OrderProdDiscountUploadSign_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdDiscountUploadSignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderProdDiscountUploadSignResult" nillable="true" type="q68:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdSilRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strGOOD_CD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdSilRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdSilRevResult" nillable="true" type="q69:ArrayOfOrderProdSil_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCuscdRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_CON_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_SANGHO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCuscdRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderConCuscdRevResult" nillable="true" type="q70:ArrayOfOrderConCuscdRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCusRegNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q71:OrderConCusReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCusRegNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderConCusRegNewResult" nillable="true" type="q72:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCusReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q73:OrderConCusReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCusRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderConCusRegResult" nillable="true" type="q74:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCusRegNew_Rev1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q75:OrderConCusReg_Info_Rev1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCusRegNew_Rev1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderConCusRegNew_Rev1Result" nillable="true" type="q76:OrderRev_Save_MasterDetail_Infos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCusRegNew_Check_Rev1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="check_info" nillable="true" type="q77:OrderRegDetail_Info_Rev1_Checks" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderConCusRegNew_Check_Rev1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderConCusRegNew_Check_Rev1Result" nillable="true" type="q78:OrderRev_Save_Check_Infos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderCusGradeRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderCusGradeRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderCusGradeRevResult" nillable="true" type="q79:ArrayOfRevData_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderCusGradeRevNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderCusGradeRevNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderCusGradeRevNewResult" nillable="true" type="q80:ArrayOfRevData_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdListRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_SILJUK_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdListRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdListRevResult" nillable="true" type="q81:ArrayOfProdList_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdListGradeRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_SEQ_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdListGradeRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdListGradeRevResult" nillable="true" type="q82:ArrayOfProdList_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderCusProdGradeRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_GOOD_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderCusProdGradeRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderCusProdGradeRevResult" nillable="true" type="q83:ArrayOfRevData_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGradeReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q84:OrderProdGradeReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGradeRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderProdGradeRegResult" nillable="true" type="q85:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGradeDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q86:OrderProdGradeDelete_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGradeDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderProdGradeDeleteResult" nillable="true" type="q87:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDiscountRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMMDD1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YYMMDD2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDiscountRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderDiscountRevResult" nillable="true" type="q88:ArrayOfOrderRev_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDiscountRevDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDiscountRevDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderDiscountRevDetailResult" nillable="true" type="q89:ArrayOfOrderDiscountRevDetail_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PlanProdSearch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_V_KS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_V_SABUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_V_KYUL_ST" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_V_CONFIRM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_V_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_V_KYUL_ST_GA" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PlanProdSearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="PlanProdSearchResult" nillable="true" type="q90:ArrayOfPlanProd_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PlanProdDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_STATE_SEQ_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_KYUL_ST" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PlanProdDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="PlanProdDetailResult" nillable="true" type="q91:ArrayOfPlanProd_Detail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdListGradeRevNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_SEQ_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdListGradeRevNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdListGradeRevNewResult" nillable="true" type="q92:ArrayOfProdList_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdListRevNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdListRevNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdListRevNewResult" nillable="true" type="q93:ArrayOfProdList_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGaListRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_YYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGaListRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderProdGaListRevResult" nillable="true" type="q94:ArrayOfProdList_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGradeRegNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q95:OrderProdGradeReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGradeRegNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderProdGradeRegNewResult" nillable="true" type="q96:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGradeRegSin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q97:OrderProdGradeReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGradeRegSinResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderProdGradeRegSinResult" nillable="true" type="q98:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGaReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="OrderInfos" nillable="true" type="q99:OrderProdGradeReg_Info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderProdGaRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderProdGaRegResult" nillable="true" type="q100:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoanCusRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoanCusRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="LoanCusRevResult" nillable="true" type="q101:ArrayOfCusLoanModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q102:CusLoanCheckModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanCheckResult" nillable="true" type="q103:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanCalc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strHwanAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSuAmt2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strBaseAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAddAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strLoanAmt" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMcAmt" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanCalcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="CusLoanCalcResult" nillable="true" type="q104:ArrayOfCusLoanCalcModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanReg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q105:CusLoanRegModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanRegResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanRegResult" nillable="true" type="q106:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoanCusListRev">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strDAM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strKYUL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strUSERID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoanCusListRevResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="LoanCusListRevResult" nillable="true" type="q107:ArrayOfCusLoanListModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanApp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q108:CusLoanAppModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanAppResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanAppResult" nillable="true" type="q109:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanAppNew">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q110:CusLoanAppModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanAppNewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanAppNewResult" nillable="true" type="q111:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanReject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="regParam" nillable="true" type="q112:CusLoanAppModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CusLoanRejectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CusLoanRejectResult" nillable="true" type="q113:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

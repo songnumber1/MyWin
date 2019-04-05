@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CusLoanRegModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strADD_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strBASE_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strBIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strCHK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strILSU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strJAN_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strJP_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strKYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strMC_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPLAN_HWAN_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPLAN_HWAN_AMT_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPLAN_HWAN_AMT_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPLAN_LOAN_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPLAN_SU_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPLAN_SU_AMT_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strPLAN_SU_AMT_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUSERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strYUL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CusLoanRegModel" nillable="true" type="tns:CusLoanRegModel" />
+  <xs:complexType name="ArrayOfCusLoanCalcModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CusLoanCalcModel" nillable="true" type="tns:CusLoanCalcModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCusLoanCalcModel" nillable="true" type="tns:ArrayOfCusLoanCalcModel" />
+  <xs:complexType name="CusLoanCalcModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADD_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERROR_MSG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ILSU" type="xs:decimal" />
+      <xs:element minOccurs="0" name="JAN_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="JP_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MSG" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CusLoanCalcModel" nillable="true" type="tns:CusLoanCalcModel" />
+  <xs:complexType name="ArrayOfCusLoanModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CusLoanModel" nillable="true" type="tns:CusLoanModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCusLoanModel" nillable="true" type="tns:ArrayOfCusLoanModel" />
+  <xs:complexType name="CusLoanModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADD_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BASE_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ILSU" type="xs:decimal" />
+      <xs:element minOccurs="0" name="JAN_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="KYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MC_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PLAN_HWAN_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PLAN_HWAN_AMT_1" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PLAN_HWAN_AMT_2" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PLAN_LOAN_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PLAN_SU_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PLAN_SU_AMT_1" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PLAN_SU_AMT_2" type="xs:decimal" />
+      <xs:element minOccurs="0" name="YUL" type="xs:decimal" />
+      <xs:element minOccurs="0" name="YYMM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM_2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CusLoanModel" nillable="true" type="tns:CusLoanModel" />
+  <xs:complexType name="ArrayOfCusProdGrade_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CusProdGrade_Info" nillable="true" type="tns:CusProdGrade_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCusProdGrade_Info" nillable="true" type="tns:ArrayOfCusProdGrade_Info" />
+  <xs:complexType name="CusProdGrade_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GRADE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CusProdGrade_Info" nillable="true" type="tns:CusProdGrade_Info" />
+  <xs:complexType name="CusProdGradeReg_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CusProdGrade_list" nillable="true" type="tns:ArrayOfCusProdGrade_Info" />
+      <xs:element minOccurs="0" name="GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CusProdGradeReg_Info" nillable="true" type="tns:CusProdGradeReg_Info" />
+  <xs:complexType name="ArrayOfOrderMKTRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderMKTRev_Info" nillable="true" type="tns:OrderMKTRev_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderMKTRev_Info" nillable="true" type="tns:ArrayOfOrderMKTRev_Info" />
+  <xs:complexType name="OrderMKTRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DANGA" type="xs:int" />
+      <xs:element minOccurs="0" name="EMP_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_ST_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="QTY" type="xs:int" />
+      <xs:element minOccurs="0" name="REJECT_REMARKS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REMARKS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderMKTRev_Info" nillable="true" type="tns:OrderMKTRev_Info" />
+  <xs:complexType name="OrderMKTReg_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderMKTList_Info" nillable="true" type="tns:ArrayOfOrderMKTRegList_Info" />
+      <xs:element minOccurs="0" name="USERID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderMKTReg_Info" nillable="true" type="tns:OrderMKTReg_Info" />
+  <xs:complexType name="ArrayOfOrderMKTRegList_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderMKTRegList_Info" nillable="true" type="tns:OrderMKTRegList_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderMKTRegList_Info" nillable="true" type="tns:ArrayOfOrderMKTRegList_Info" />
+  <xs:complexType name="OrderMKTRegList_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DANGA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REMARKS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USERID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderMKTRegList_Info" nillable="true" type="tns:OrderMKTRegList_Info" />
+  <xs:complexType name="ArrayOfOrderMKTProdRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderMKTProdRev_Info" nillable="true" type="tns:OrderMKTProdRev_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderMKTProdRev_Info" nillable="true" type="tns:ArrayOfOrderMKTProdRev_Info" />
+  <xs:complexType name="OrderMKTProdRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CHUL_DN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TONG_CHK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TONG_SAYU" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderMKTProdRev_Info" nillable="true" type="tns:OrderMKTProdRev_Info" />
+  <xs:complexType name="OrderMKTKyul_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderMKTKyulList" nillable="true" type="tns:ArrayOfOrderMKTKyulList_Info" />
+      <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderMKTKyul_Info" nillable="true" type="tns:OrderMKTKyul_Info" />
+  <xs:complexType name="ArrayOfOrderMKTKyulList_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderMKTKyulList_Info" nillable="true" type="tns:OrderMKTKyulList_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderMKTKyulList_Info" nillable="true" type="tns:ArrayOfOrderMKTKyulList_Info" />
+  <xs:complexType name="OrderMKTKyulList_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="str_KYUL_FLAG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_KYUL_STAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_MOD_SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_REJECT_REMARKS" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderMKTKyulList_Info" nillable="true" type="tns:OrderMKTKyulList_Info" />
+  <xs:complexType name="OrderMKTModQty_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="str_DANGA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_KYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_MOD_REMARKS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_MOD_SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_QTY" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderMKTModQty_Info" nillable="true" type="tns:OrderMKTModQty_Info" />
+  <xs:complexType name="ArrayOfOrderMKTSil_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderMKTSil_Info" nillable="true" type="tns:OrderMKTSil_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderMKTSil_Info" nillable="true" type="tns:ArrayOfOrderMKTSil_Info" />
+  <xs:complexType name="OrderMKTSil_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_AMT0" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_AMT1" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_AMT2" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_AMT3" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_AMT4" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_AMT5" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_AMT6" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_QTY0" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_QTY1" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_QTY2" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_QTY3" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_QTY4" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_QTY5" type="xs:int" />
+      <xs:element minOccurs="0" name="CUS_QTY6" type="xs:int" />
+      <xs:element minOccurs="0" name="GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAIN_CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAIN_CUS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MM0" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MM1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MM2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MM3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MM4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MM5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MM6" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderMKTSil_Info" nillable="true" type="tns:OrderMKTSil_Info" />
+  <xs:complexType name="ArrayOfOrderDomaeQty_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderDomaeQty_Info" nillable="true" type="tns:OrderDomaeQty_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderDomaeQty_Info" nillable="true" type="tns:ArrayOfOrderDomaeQty_Info" />
+  <xs:complexType name="OrderDomaeQty_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JAEGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JAEGO_10" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderDomaeQty_Info" nillable="true" type="tns:OrderDomaeQty_Info" />
+  <xs:complexType name="ArrayOfOrderCode_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderCode_Info" nillable="true" type="tns:OrderCode_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderCode_Info" nillable="true" type="tns:ArrayOfOrderCode_Info" />
+  <xs:complexType name="OrderCode_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BASE_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BASE_CD_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PARENT_KEY" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderCode_Info" nillable="true" type="tns:OrderCode_Info" />
+  <xs:complexType name="ArrayOfOrderRevDate_ReturnToo_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRevDate_ReturnToo_Info" nillable="true" type="tns:OrderRevDate_ReturnToo_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRevDate_ReturnToo_Info" nillable="true" type="tns:ArrayOfOrderRevDate_ReturnToo_Info" />
+  <xs:complexType name="OrderRevDate_ReturnToo_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DATE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRevDate_ReturnToo_Info" nillable="true" type="tns:OrderRevDate_ReturnToo_Info" />
+  <xs:complexType name="ArrayOfOrderRevDate_ReturnToo_Info_Rv1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRevDate_ReturnToo_Info_Rv1" nillable="true" type="tns:OrderRevDate_ReturnToo_Info_Rv1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRevDate_ReturnToo_Info_Rv1" nillable="true" type="tns:ArrayOfOrderRevDate_ReturnToo_Info_Rv1" />
+  <xs:complexType name="OrderRevDate_ReturnToo_Info_Rv1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MSG" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRevDate_ReturnToo_Info_Rv1" nillable="true" type="tns:OrderRevDate_ReturnToo_Info_Rv1" />
+  <xs:complexType name="ArrayOfOrderRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRev_Info" nillable="true" type="tns:OrderRev_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRev_Info" nillable="true" type="tns:ArrayOfOrderRev_Info" />
+  <xs:complexType name="OrderRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BASONG_YN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DAM_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRev_Info" nillable="true" type="tns:OrderRev_Info" />
+  <xs:complexType name="ArrayOfOrderRev_Info_Rv1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRev_Info_Rv1" nillable="true" type="tns:OrderRev_Info_Rv1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRev_Info_Rv1" nillable="true" type="tns:ArrayOfOrderRev_Info_Rv1" />
+  <xs:complexType name="OrderRev_Info_Rv1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUST_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUST_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DELIVERY_CUST_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DELIVERY_CUST_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DELIVERY_REQ_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MBR_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_GBN_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_NUMB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROC_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROC_STATUS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALE_DEPT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALE_DEPT_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SHIP_YN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOT_WON_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_GBN_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_GBN_DTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_GBN_DTL_CD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRev_Info_Rv1" nillable="true" type="tns:OrderRev_Info_Rv1" />
+  <xs:complexType name="ArrayOfOrderRevDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRevDetail_Info" nillable="true" type="tns:OrderRevDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRevDetail_Info" nillable="true" type="tns:ArrayOfOrderRevDetail_Info" />
+  <xs:complexType name="OrderRevDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="BASE_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BOX_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DANGA" type="xs:int" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JP_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="QTY" type="xs:int" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRevDetail_Info" nillable="true" type="tns:OrderRevDetail_Info" />
+  <xs:complexType name="ArrayOfOrderRevDetail_Info_Rv1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRevDetail_Info_Rv1" nillable="true" type="tns:OrderRevDetail_Info_Rv1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRevDetail_Info_Rv1" nillable="true" type="tns:ArrayOfOrderRevDetail_Info_Rv1" />
+  <xs:complexType name="OrderRevDetail_Info_Rv1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ITEM_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ITEM_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ITEM_STANDARD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PRICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VAT_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VAT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VAT_CD_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WARE_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WON_AMT" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRevDetail_Info_Rv1" nillable="true" type="tns:OrderRevDetail_Info_Rv1" />
+  <xs:complexType name="ArrayOfOrderAppRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderAppRev_Info" nillable="true" type="tns:OrderAppRev_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderAppRev_Info" nillable="true" type="tns:ArrayOfOrderAppRev_Info" />
+  <xs:complexType name="OrderAppRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JP_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="PAN_CRI_GU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAN_GU_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SAYU_YN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOT" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderAppRev_Info" nillable="true" type="tns:OrderAppRev_Info" />
+  <xs:complexType name="ArrayOfOrderAppRevDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderAppRevDetail_Info" nillable="true" type="tns:OrderAppRevDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderAppRevDetail_Info" nillable="true" type="tns:ArrayOfOrderAppRevDetail_Info" />
+  <xs:complexType name="OrderAppRevDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="BASE_QTY" type="xs:double" />
+      <xs:element minOccurs="0" name="BOX_QTY" type="xs:double" />
+      <xs:element minOccurs="0" name="DANGA" type="xs:int" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LINE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="QTY" type="xs:int" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderAppRevDetail_Info" nillable="true" type="tns:OrderAppRevDetail_Info" />
+  <xs:complexType name="ArrayOfOrderRevCusSil_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRevCusSil_Info" nillable="true" type="tns:OrderRevCusSil_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRevCusSil_Info" nillable="true" type="tns:ArrayOfOrderRevCusSil_Info" />
+  <xs:complexType name="OrderRevCusSil_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CHAE_ILSU" type="xs:int" />
+      <xs:element minOccurs="0" name="DM_CHAE_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="DM_OMAE_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="HAN_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="MC_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="OMAE_ILSU" type="xs:int" />
+      <xs:element minOccurs="0" name="SU_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="YESIN_HANDO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRevCusSil_Info" nillable="true" type="tns:OrderRevCusSil_Info" />
+  <xs:complexType name="ArrayOfOrderRevCCInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRevCCInfo" nillable="true" type="tns:OrderRevCCInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRevCCInfo" nillable="true" type="tns:ArrayOfOrderRevCCInfo" />
+  <xs:complexType name="OrderRevCCInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COMPANY_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COST_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COST_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FSH_MSG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FSH_YN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JUSO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALE_DEPT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALE_DEPT_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALE_EMP_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALE_EMP_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SAMPLE_DEPT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SAMPLE_DEPT_NM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRevCCInfo" nillable="true" type="tns:OrderRevCCInfo" />
+  <xs:complexType name="ArrayOfOrderRevCus_Check_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRevCus_Check_Info" nillable="true" type="tns:OrderRevCus_Check_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRevCus_Check_Info" nillable="true" type="tns:ArrayOfOrderRevCus_Check_Info" />
+  <xs:complexType name="OrderRevCus_Check_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FSH_MSG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FSH_YN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRevCus_Check_Info" nillable="true" type="tns:OrderRevCus_Check_Info" />
+  <xs:complexType name="OrderReg_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DAM_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderRegDetail_Info" nillable="true" type="tns:ArrayOfOrderRegDetail_Info" />
+      <xs:element minOccurs="0" name="PAN_GU_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOT_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="USERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_CD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderReg_Info" nillable="true" type="tns:OrderReg_Info" />
+  <xs:complexType name="ArrayOfOrderRegDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRegDetail_Info" nillable="true" type="tns:OrderRegDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRegDetail_Info" nillable="true" type="tns:ArrayOfOrderRegDetail_Info" />
+  <xs:complexType name="OrderRegDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AN_GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROD_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROD_PRICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROD_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROD_TOT_PRICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROD_VAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VALIDITY_GB" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRegDetail_Info" nillable="true" type="tns:OrderRegDetail_Info" />
+  <xs:complexType name="ArrayOfOrderAppRevAbnormal2_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderAppRevAbnormal2_Info" nillable="true" type="tns:OrderAppRevAbnormal2_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderAppRevAbnormal2_Info" nillable="true" type="tns:ArrayOfOrderAppRevAbnormal2_Info" />
+  <xs:complexType name="OrderAppRevAbnormal2_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SAYU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YUL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderAppRevAbnormal2_Info" nillable="true" type="tns:OrderAppRevAbnormal2_Info" />
+  <xs:complexType name="ArrayOfOrderAppRevAbnormal1_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderAppRevAbnormal1_Info" nillable="true" type="tns:OrderAppRevAbnormal1_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderAppRevAbnormal1_Info" nillable="true" type="tns:ArrayOfOrderAppRevAbnormal1_Info" />
+  <xs:complexType name="OrderAppRevAbnormal1_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AG1" type="xs:int" />
+      <xs:element minOccurs="0" name="AG2" type="xs:int" />
+      <xs:element minOccurs="0" name="AG3" type="xs:int" />
+      <xs:element minOccurs="0" name="AG4" type="xs:int" />
+      <xs:element minOccurs="0" name="AG5" type="xs:int" />
+      <xs:element minOccurs="0" name="AG6" type="xs:int" />
+      <xs:element minOccurs="0" name="AG_ETC" type="xs:int" />
+      <xs:element minOccurs="0" name="YYMM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM6" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderAppRevAbnormal1_Info" nillable="true" type="tns:OrderAppRevAbnormal1_Info" />
+  <xs:complexType name="ArrayOfOrderProdDiscountRevClient_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderProdDiscountRevClient_Info" nillable="true" type="tns:OrderProdDiscountRevClient_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderProdDiscountRevClient_Info" nillable="true" type="tns:ArrayOfOrderProdDiscountRevClient_Info" />
+  <xs:complexType name="OrderProdDiscountRevClient_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdDiscountRevClient_Info" nillable="true" type="tns:OrderProdDiscountRevClient_Info" />
+  <xs:complexType name="ArrayOfOrderProdDiscountRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderProdDiscountRev_Info" nillable="true" type="tns:OrderProdDiscountRev_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderProdDiscountRev_Info" nillable="true" type="tns:ArrayOfOrderProdDiscountRev_Info" />
+  <xs:complexType name="OrderProdDiscountRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CHA_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="D_BO_DN" type="xs:int" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_QTY" type="xs:double" />
+      <xs:element minOccurs="0" name="J_BO_DN" type="xs:int" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdDiscountRev_Info" nillable="true" type="tns:OrderProdDiscountRev_Info" />
+  <xs:complexType name="ArrayOfOrderOTCRevClient_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderOTCRevClient_Info" nillable="true" type="tns:OrderOTCRevClient_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderOTCRevClient_Info" nillable="true" type="tns:ArrayOfOrderOTCRevClient_Info" />
+  <xs:complexType name="OrderOTCRevClient_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CON_CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_GU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_TONG_GU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DP_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JUKSONG_YN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JUMIN_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JUSO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LATITUDE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LONGITUDE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POST_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PRE_CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SAUP_IP_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_DTL_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_DTL_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_NM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderOTCRevClient_Info" nillable="true" type="tns:OrderOTCRevClient_Info" />
+  <xs:complexType name="ArrayOfRevProd_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RevProd_Info" nillable="true" type="tns:RevProd_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRevProd_Info" nillable="true" type="tns:ArrayOfRevProd_Info" />
+  <xs:complexType name="RevProd_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AN_GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BASE_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BOX_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BO_DN" type="xs:int" />
+      <xs:element minOccurs="0" name="BO_GU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHANGE_SZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHUL_DN" type="xs:int" />
+      <xs:element minOccurs="0" name="GONG_DN" type="xs:int" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_ENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_KNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_UNIT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JIWON_DN" type="xs:int" />
+      <xs:element minOccurs="0" name="JUN_GU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PEGI_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PJ_SOME_DN" type="xs:int" />
+      <xs:element minOccurs="0" name="PJ_SOME_DN2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PJ_SOME_DN3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALE_UNIT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SECOND_BOX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STN_DN" type="xs:int" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TONG_GU" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RevProd_Info" nillable="true" type="tns:RevProd_Info" />
+  <xs:complexType name="ArrayOfOrderOTCRevBudget_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderOTCRevBudget_Info" nillable="true" type="tns:OrderOTCRevBudget_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderOTCRevBudget_Info" nillable="true" type="tns:ArrayOfOrderOTCRevBudget_Info" />
+  <xs:complexType name="OrderOTCRevBudget_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DM_ADD_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="DM_JAN_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="DM_MAE_JIP" type="xs:int" />
+      <xs:element minOccurs="0" name="DM_NOR_AMT" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderOTCRevBudget_Info" nillable="true" type="tns:OrderOTCRevBudget_Info" />
+  <xs:complexType name="ArrayOfOrderOTCRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderOTCRev_Info" nillable="true" type="tns:OrderOTCRev_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderOTCRev_Info" nillable="true" type="tns:ArrayOfOrderOTCRev_Info" />
+  <xs:complexType name="OrderOTCRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BASONG_YN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DAM_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderOTCRev_Info" nillable="true" type="tns:OrderOTCRev_Info" />
+  <xs:complexType name="ArrayOfOrderOTCRevDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderOTCRevDetail_Info" nillable="true" type="tns:OrderOTCRevDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderOTCRevDetail_Info" nillable="true" type="tns:ArrayOfOrderOTCRevDetail_Info" />
+  <xs:complexType name="OrderOTCRevDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="DANGA" type="xs:int" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JP_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="QTY" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderOTCRevDetail_Info" nillable="true" type="tns:OrderOTCRevDetail_Info" />
+  <xs:complexType name="OrderAppRegPass_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="str_P_ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_P_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderAppRegPass_Info" nillable="true" type="tns:OrderAppRegPass_Info" />
+  <xs:complexType name="OrderAppRegPassAll_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderAppRegPassList_Info" nillable="true" type="tns:ArrayOfOrderAppRegPass_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderAppRegPassAll_Info" nillable="true" type="tns:OrderAppRegPassAll_Info" />
+  <xs:complexType name="ArrayOfOrderAppRegPass_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderAppRegPass_Info" nillable="true" type="tns:OrderAppRegPass_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderAppRegPass_Info" nillable="true" type="tns:ArrayOfOrderAppRegPass_Info" />
+  <xs:complexType name="OrderAppRegBukyul_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="str_P_BUKYUL_REMARK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_P_ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_P_ORDER_SEQ_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderAppRegBukyul_Info" nillable="true" type="tns:OrderAppRegBukyul_Info" />
+  <xs:complexType name="OrderProdDiscountReg_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderProdDiscountRegDetail_Info" nillable="true" type="tns:ArrayOfOrderProdDiscountRegDetail_Info" />
+      <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_DEPT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SIGN_URL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_USERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_YMD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdDiscountReg_Info" nillable="true" type="tns:OrderProdDiscountReg_Info" />
+  <xs:complexType name="ArrayOfOrderProdDiscountRegDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderProdDiscountRegDetail_Info" nillable="true" type="tns:OrderProdDiscountRegDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderProdDiscountRegDetail_Info" nillable="true" type="tns:ArrayOfOrderProdDiscountRegDetail_Info" />
+  <xs:complexType name="OrderProdDiscountRegDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="n_QTY" type="xs:double" />
+      <xs:element minOccurs="0" name="n_SEQ" type="xs:int" />
+      <xs:element minOccurs="0" name="str_GOOD_CD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdDiscountRegDetail_Info" nillable="true" type="tns:OrderProdDiscountRegDetail_Info" />
+  <xs:complexType name="OrderProdDiscountUploadSign_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SEQ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_YMD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdDiscountUploadSign_Info" nillable="true" type="tns:OrderProdDiscountUploadSign_Info" />
+  <xs:complexType name="ArrayOfOrderProdSil_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderProdSil_Info" nillable="true" type="tns:OrderProdSil_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderProdSil_Info" nillable="true" type="tns:ArrayOfOrderProdSil_Info" />
+  <xs:complexType name="OrderProdSil_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TOTAL_QTY" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdSil_Info" nillable="true" type="tns:OrderProdSil_Info" />
+  <xs:complexType name="ArrayOfOrderConCuscdRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderConCuscdRev_Info" nillable="true" type="tns:OrderConCuscdRev_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderConCuscdRev_Info" nillable="true" type="tns:ArrayOfOrderConCuscdRev_Info" />
+  <xs:complexType name="OrderConCuscdRev_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USER_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_DTL_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_DTL_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_NM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderConCuscdRev_Info" nillable="true" type="tns:OrderConCuscdRev_Info" />
+  <xs:complexType name="OrderConCusReg_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DAM_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GAN_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderRegDetail_Info" nillable="true" type="tns:ArrayOfOrderRegDetail_Info" />
+      <xs:element minOccurs="0" name="PAN_GU_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOT_AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="USERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_CD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderConCusReg_Info" nillable="true" type="tns:OrderConCusReg_Info" />
+  <xs:complexType name="OrderConCusReg_Info_Rev1">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OrderConCusReg_Info_Rev1_Base">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="OrderRegDetail_Info" nillable="true" type="tns:ArrayOfOrderConCusReg_Info_Rev1_Base" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrderConCusReg_Info_Rev1" nillable="true" type="tns:OrderConCusReg_Info_Rev1" />
+  <xs:complexType name="OrderConCusReg_Info_Rev1_Base">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="str_ARG_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_10" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ARG_9" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ATCH_FILE_SEQ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_BIZ_SITE_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_CLNT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_COST_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_CURRENCY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_CURRENCY_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_CUST_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_CUST_ITEM_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_DELIVERY_ADDR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_DELIVERY_CUST_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_DELIVERY_REQ_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_DLV_NDS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_DTS_GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_EMP_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_EX_RATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_GI_REQ_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ITEM_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ITEM_STANDARD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_LOT_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_OLD_ORDER_NUMB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_DENY_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_GBN_DTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_LINE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_NUMB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_WEIGHT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PACK_CLOSING" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PACK_ITEM_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PACK_KIND" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PACK_UNIT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PACK_WEIGHT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PLANT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PRICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PROC_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PRODUCT_CONV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_PRODUCT_REQ_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_DEPT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_EMP_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_EMP_CD_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_FREE_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_TYPE_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_UNIT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_YM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SD_ACT_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SOURCE_NUMB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SOURCE_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_STD_PRICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_TERMS_DELIVERY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_TERMS_PAYMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_TOT_CURRENCY_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_TOT_VAT_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_TOT_WON_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_UNIT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_UT_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_UT_GBN_DTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_VARIATION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_VAT_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_VAT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_WARE_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_WON_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_YESAN_EMP_CD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderConCusReg_Info_Rev1_Base" nillable="true" type="tns:OrderConCusReg_Info_Rev1_Base" />
+  <xs:complexType name="ArrayOfOrderConCusReg_Info_Rev1_Base">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderConCusReg_Info_Rev1_Base" nillable="true" type="tns:OrderConCusReg_Info_Rev1_Base" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderConCusReg_Info_Rev1_Base" nillable="true" type="tns:ArrayOfOrderConCusReg_Info_Rev1_Base" />
+  <xs:complexType name="OrderRev_Save_MasterDetail_Infos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DetailResult" nillable="true" type="tns:ArrayOfOrderRev_Save_MasterDetail_Info" />
+      <xs:element minOccurs="0" name="MasterResult" nillable="true" type="tns:OrderRev_Save_MasterDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRev_Save_MasterDetail_Infos" nillable="true" type="tns:OrderRev_Save_MasterDetail_Infos" />
+  <xs:complexType name="ArrayOfOrderRev_Save_MasterDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRev_Save_MasterDetail_Info" nillable="true" type="tns:OrderRev_Save_MasterDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRev_Save_MasterDetail_Info" nillable="true" type="tns:ArrayOfOrderRev_Save_MasterDetail_Info" />
+  <xs:complexType name="OrderRev_Save_MasterDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ERR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ITEM_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDERNUMB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RETURN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRev_Save_MasterDetail_Info" nillable="true" type="tns:OrderRev_Save_MasterDetail_Info" />
+  <xs:complexType name="OrderRegDetail_Info_Rev1_Checks">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Check_Infos" nillable="true" type="tns:ArrayOfOrderRegDetail_Info_Rev1_Check" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRegDetail_Info_Rev1_Checks" nillable="true" type="tns:OrderRegDetail_Info_Rev1_Checks" />
+  <xs:complexType name="ArrayOfOrderRegDetail_Info_Rev1_Check">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRegDetail_Info_Rev1_Check" nillable="true" type="tns:OrderRegDetail_Info_Rev1_Check" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRegDetail_Info_Rev1_Check" nillable="true" type="tns:ArrayOfOrderRegDetail_Info_Rev1_Check" />
+  <xs:complexType name="OrderRegDetail_Info_Rev1_Check">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="str_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_BAESONG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_CLIENT_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_COMPANY_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_CUST_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_D_CUST_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_EMPNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ITEM_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_ORDER_GBN_DTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SALE_EMP_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_SEQ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_STD_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_USER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_UT_GBN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_UT_GBN1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_UT_GBN_DTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_UT_GBN_DTL1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_YESAN_USER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="str_YMD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRegDetail_Info_Rev1_Check" nillable="true" type="tns:OrderRegDetail_Info_Rev1_Check" />
+  <xs:complexType name="OrderRev_Save_Check_Infos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CheckResult" nillable="true" type="tns:ArrayOfOrderRev_Save_Result_Check_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRev_Save_Check_Infos" nillable="true" type="tns:OrderRev_Save_Check_Infos" />
+  <xs:complexType name="ArrayOfOrderRev_Save_Result_Check_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderRev_Save_Result_Check_Info" nillable="true" type="tns:OrderRev_Save_Result_Check_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderRev_Save_Result_Check_Info" nillable="true" type="tns:ArrayOfOrderRev_Save_Result_Check_Info" />
+  <xs:complexType name="OrderRev_Save_Result_Check_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FSH_MSG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FSH_YN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ITEM_CD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderRev_Save_Result_Check_Info" nillable="true" type="tns:OrderRev_Save_Result_Check_Info" />
+  <xs:complexType name="ArrayOfRevData_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RevData_Info" nillable="true" type="tns:RevData_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRevData_Info" nillable="true" type="tns:ArrayOfRevData_Info" />
+  <xs:complexType name="RevData_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DATA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUBUN_NM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RevData_Info" nillable="true" type="tns:RevData_Info" />
+  <xs:complexType name="ArrayOfProdList_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProdList_Info" nillable="true" type="tns:ProdList_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProdList_Info" nillable="true" type="tns:ArrayOfProdList_Info" />
+  <xs:complexType name="ProdList_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHANGE_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHANGE_SZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CRDATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DANGA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GRADE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JP_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LINE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REMARKS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RE_SEQ_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RE_YYYYMM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SU_GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TONG_GUBUN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProdList_Info" nillable="true" type="tns:ProdList_Info" />
+  <xs:complexType name="OrderProdGradeReg_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderProdGradeRegDetail_Info" nillable="true" type="tns:ArrayOfOrderProdGradeRegDetail_Info" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SU_GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_DTL_CD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdGradeReg_Info" nillable="true" type="tns:OrderProdGradeReg_Info" />
+  <xs:complexType name="ArrayOfOrderProdGradeRegDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderProdGradeRegDetail_Info" nillable="true" type="tns:OrderProdGradeRegDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderProdGradeRegDetail_Info" nillable="true" type="tns:ArrayOfOrderProdGradeRegDetail_Info" />
+  <xs:complexType name="OrderProdGradeRegDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHANGE_QTY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHANGE_SZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DANGA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GRADE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QTY" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdGradeRegDetail_Info" nillable="true" type="tns:OrderProdGradeRegDetail_Info" />
+  <xs:complexType name="OrderProdGradeDelete_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SEQ_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderProdGradeDelete_Info" nillable="true" type="tns:OrderProdGradeDelete_Info" />
+  <xs:complexType name="ArrayOfOrderDiscountRevDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderDiscountRevDetail_Info" nillable="true" type="tns:OrderDiscountRevDetail_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderDiscountRevDetail_Info" nillable="true" type="tns:ArrayOfOrderDiscountRevDetail_Info" />
+  <xs:complexType name="OrderDiscountRevDetail_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" type="xs:int" />
+      <xs:element minOccurs="0" name="CHA_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DANGA" type="xs:int" />
+      <xs:element minOccurs="0" name="D_BO_DN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="J_BO_DN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LINE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_DT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="QTY" type="xs:double" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderDiscountRevDetail_Info" nillable="true" type="tns:OrderDiscountRevDetail_Info" />
+  <xs:complexType name="ArrayOfPlanProd_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PlanProd_Info" nillable="true" type="tns:PlanProd_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPlanProd_Info" nillable="true" type="tns:ArrayOfPlanProd_Info" />
+  <xs:complexType name="PlanProd_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CANCEL_BIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COMFORM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GA_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GRADE_AMT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JUMUN_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RE_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="RE_YYYYMM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SANGHO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEQ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SU_GUBUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_DTL_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_DTL_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UT_NM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PlanProd_Info" nillable="true" type="tns:PlanProd_Info" />
+  <xs:complexType name="ArrayOfPlanProd_Detail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PlanProd_Detail" nillable="true" type="tns:PlanProd_Detail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPlanProd_Detail" nillable="true" type="tns:ArrayOfPlanProd_Detail" />
+  <xs:complexType name="PlanProd_Detail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DANGA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="GOOD_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GOOD_K_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LINE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QTY" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RE_SEQ_NO" type="xs:int" />
+      <xs:element minOccurs="0" name="RE_YYYYMM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SZ" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PlanProd_Detail" nillable="true" type="tns:PlanProd_Detail" />
+  <xs:complexType name="CusLoanCheckModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUSERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CusLoanCheckModel" nillable="true" type="tns:CusLoanCheckModel" />
+  <xs:complexType name="ArrayOfCusLoanListModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CusLoanListModel" nillable="true" type="tns:CusLoanListModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCusLoanListModel" nillable="true" type="tns:ArrayOfCusLoanListModel" />
+  <xs:complexType name="CusLoanListModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CUS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KS_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_NM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KYUL_ST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LOAN_ADD_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MC_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLAN_LOAN_AMT" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SABUN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CusLoanListModel" nillable="true" type="tns:CusLoanListModel" />
+  <xs:complexType name="CusLoanAppModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strCUS_CD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strUSERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="strYYMM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CusLoanAppModel" nillable="true" type="tns:CusLoanAppModel" />
+</xs:schema>

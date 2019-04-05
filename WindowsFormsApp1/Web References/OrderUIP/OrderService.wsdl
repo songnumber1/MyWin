@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OrderService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52312/Shinyak_WS/OrderService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52312/Shinyak_WS/OrderService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52312/Shinyak_WS/OrderService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:52312/Shinyak_WS/OrderService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOrderService_CusLoanTeamLeaderReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanTeamLeaderReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanTeamLeaderReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanTeamLeaderRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanCalc_new_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanCalc_new" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanCalc_new_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanCalc_newResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanCalc_new2_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanCalc_new2" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanCalc_new2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanCalc_new2Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanReg_new_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanReg_new" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanReg_new_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanReg_newResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanReg_new2_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanReg_new2" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanReg_new2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanReg_new2Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_LoanCusRev_new_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoanCusRev_new" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_LoanCusRev_new_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoanCusRev_newResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_LoanCusRev_new2_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoanCusRev_new2" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_LoanCusRev_new2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoanCusRev_new2Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanTeamLeaderReg_new_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanTeamLeaderReg_new" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanTeamLeaderReg_new_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanTeamLeaderReg_newResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdCusGrade_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdCusGrade" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdCusGrade_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdCusGradeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdCusGradeReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdCusGradeReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdCusGradeReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdCusGradeRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderProdRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderProdRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderProdRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderProdRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderKyulRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderKyulRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderKyulRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderKyulRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderKyulReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderKyulReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderKyulReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderKyulRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderModify_InputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderModify" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderModify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderModifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderSil_InputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderSil" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MKTOrderSil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MKTOrderSilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_Order_Domae_Qty_InputMessage">
+    <wsdl:part name="parameters" element="tns:Order_Domae_Qty" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_Order_Domae_Qty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Order_Domae_QtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_Order_Code_InputMessage">
+    <wsdl:part name="parameters" element="tns:Order_Code" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_Order_Code_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Order_CodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevDate" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevDate_Rev1_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevDate_Rev1" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevDate_Rev1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevDate_Rev1Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRev_Rev1_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRev_Rev1" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRev_Rev1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRev_Rev1Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevDetail" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevDetail_Rev1_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevDetail_Rev1" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevDetail_Rev1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevDetail_Rev1Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRevDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRevDetail" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRevDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRevDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevCusSil_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevCusSil" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevCusSil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevCusSilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevCus_Check_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevCus_Check" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevCus_Check_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevCus_CheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevItem_Check_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevItem_Check" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevItem_Check_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevItem_CheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevItemQty_Check_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevItemQty_Check" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevItemQty_Check_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevItemQty_CheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevCenter_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevCenter" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRevCenter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRevCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderReg20111013_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderReg20111013" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderReg20111013_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderReg20111013Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRevAbnormal2_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRevAbnormal2" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRevAbnormal2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRevAbnormal2Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRevAbnormal1_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRevAbnormal1" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRevAbnormal1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRevAbnormal1Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdDiscountRevClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdDiscountRevClient" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdDiscountRevClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdDiscountRevClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdDiscountRevProd_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdDiscountRevProd" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdDiscountRevProd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdDiscountRevProdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCRevClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRevClient" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCRevClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRevClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_RevOTCProd_InputMessage">
+    <wsdl:part name="parameters" element="tns:RevOTCProd" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_RevOTCProd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RevOTCProdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCRevBudget_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRevBudget" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCRevBudget_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRevBudgetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRegTEST_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRegTEST" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderRegTEST_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderRegTESTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCRevDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRevDetail" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderOTCRevDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderOTCRevDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegPass_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegPass" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegPass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegPassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegPassGetType_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegPassGetType" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegPassGetType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegPassGetTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegPassAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegPassAll" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegPassAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegPassAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegPassAlltest_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegPassAlltest" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegPassAlltest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegPassAlltestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegBukyul_Info_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegBukyul_Info" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderAppRegBukyul_Info_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderAppRegBukyul_InfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdDiscountReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdDiscountReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdDiscountReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdDiscountRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdDiscountUploadSign_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdDiscountUploadSign" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdDiscountUploadSign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdDiscountUploadSignResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdSilRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdSilRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdSilRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdSilRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCuscdRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCuscdRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCuscdRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCuscdRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCusRegNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCusRegNew" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCusRegNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCusRegNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCusReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCusReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCusReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCusRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCusRegNew_Rev1_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCusRegNew_Rev1" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCusRegNew_Rev1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCusRegNew_Rev1Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCusRegNew_Check_Rev1_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCusRegNew_Check_Rev1" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderConCusRegNew_Check_Rev1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderConCusRegNew_Check_Rev1Response" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderCusGradeRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderCusGradeRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderCusGradeRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderCusGradeRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderCusGradeRevNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderCusGradeRevNew" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderCusGradeRevNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderCusGradeRevNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdListRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdListRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdListRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdListRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdListGradeRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdListGradeRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdListGradeRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdListGradeRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderCusProdGradeRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderCusProdGradeRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderCusProdGradeRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderCusProdGradeRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGradeReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGradeReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGradeReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGradeRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGradeDelete_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGradeDelete" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGradeDelete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGradeDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderDiscountRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDiscountRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderDiscountRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDiscountRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderDiscountRevDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDiscountRevDetail" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderDiscountRevDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDiscountRevDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_PlanProdSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:PlanProdSearch" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_PlanProdSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PlanProdSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_PlanProdDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:PlanProdDetail" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_PlanProdDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PlanProdDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdListGradeRevNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdListGradeRevNew" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdListGradeRevNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdListGradeRevNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdListRevNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdListRevNew" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdListRevNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdListRevNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGaListRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGaListRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGaListRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGaListRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGradeRegNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGradeRegNew" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGradeRegNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGradeRegNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGradeRegSin_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGradeRegSin" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGradeRegSin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGradeRegSinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGaReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGaReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_OrderProdGaReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderProdGaRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_LoanCusRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoanCusRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_LoanCusRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoanCusRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanCheck" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanCalc_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanCalc" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanCalc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanCalcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanReg" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_LoanCusListRev_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoanCusListRev" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_LoanCusListRev_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoanCusListRevResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanApp_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanApp" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanApp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanAppResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanAppNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanAppNew" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanAppNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanAppNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanReject_InputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanReject" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CusLoanReject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CusLoanRejectResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOrderService">
+    <wsdl:operation name="CusLoanTeamLeaderReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanTeamLeaderReg" message="tns:IOrderService_CusLoanTeamLeaderReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanTeamLeaderRegResponse" message="tns:IOrderService_CusLoanTeamLeaderReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanCalc_new">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanCalc_new" message="tns:IOrderService_CusLoanCalc_new_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanCalc_newResponse" message="tns:IOrderService_CusLoanCalc_new_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanCalc_new2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanCalc_new2" message="tns:IOrderService_CusLoanCalc_new2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanCalc_new2Response" message="tns:IOrderService_CusLoanCalc_new2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanReg_new">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanReg_new" message="tns:IOrderService_CusLoanReg_new_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanReg_newResponse" message="tns:IOrderService_CusLoanReg_new_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanReg_new2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanReg_new2" message="tns:IOrderService_CusLoanReg_new2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanReg_new2Response" message="tns:IOrderService_CusLoanReg_new2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoanCusRev_new">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/LoanCusRev_new" message="tns:IOrderService_LoanCusRev_new_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/LoanCusRev_newResponse" message="tns:IOrderService_LoanCusRev_new_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoanCusRev_new2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/LoanCusRev_new2" message="tns:IOrderService_LoanCusRev_new2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/LoanCusRev_new2Response" message="tns:IOrderService_LoanCusRev_new2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanTeamLeaderReg_new">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanTeamLeaderReg_new" message="tns:IOrderService_CusLoanTeamLeaderReg_new_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanTeamLeaderReg_newResponse" message="tns:IOrderService_CusLoanTeamLeaderReg_new_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdCusGrade">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdCusGrade" message="tns:IOrderService_OrderProdCusGrade_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdCusGradeResponse" message="tns:IOrderService_OrderProdCusGrade_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdCusGradeReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdCusGradeReg" message="tns:IOrderService_OrderProdCusGradeReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdCusGradeRegResponse" message="tns:IOrderService_OrderProdCusGradeReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MKTOrderRev" message="tns:IOrderService_MKTOrderRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MKTOrderRevResponse" message="tns:IOrderService_MKTOrderRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MKTOrderReg" message="tns:IOrderService_MKTOrderReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MKTOrderRegResponse" message="tns:IOrderService_MKTOrderReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderProdRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MKTOrderProdRev" message="tns:IOrderService_MKTOrderProdRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MKTOrderProdRevResponse" message="tns:IOrderService_MKTOrderProdRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderKyulRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MKTOrderKyulRev" message="tns:IOrderService_MKTOrderKyulRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MKTOrderKyulRevResponse" message="tns:IOrderService_MKTOrderKyulRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderKyulReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MKTOrderKyulReg" message="tns:IOrderService_MKTOrderKyulReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MKTOrderKyulRegResponse" message="tns:IOrderService_MKTOrderKyulReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderModify">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MKTOrderModify" message="tns:IOrderService_MKTOrderModify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MKTOrderModifyResponse" message="tns:IOrderService_MKTOrderModify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderSil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MKTOrderSil" message="tns:IOrderService_MKTOrderSil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MKTOrderSilResponse" message="tns:IOrderService_MKTOrderSil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Order_Domae_Qty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/Order_Domae_Qty" message="tns:IOrderService_Order_Domae_Qty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/Order_Domae_QtyResponse" message="tns:IOrderService_Order_Domae_Qty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Order_Code">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/Order_Code" message="tns:IOrderService_Order_Code_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/Order_CodeResponse" message="tns:IOrderService_Order_Code_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevDate" message="tns:IOrderService_OrderRevDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevDateResponse" message="tns:IOrderService_OrderRevDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevDate_Rev1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevDate_Rev1" message="tns:IOrderService_OrderRevDate_Rev1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevDate_Rev1Response" message="tns:IOrderService_OrderRevDate_Rev1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRev" message="tns:IOrderService_OrderRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevResponse" message="tns:IOrderService_OrderRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRev_Rev1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRev_Rev1" message="tns:IOrderService_OrderRev_Rev1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRev_Rev1Response" message="tns:IOrderService_OrderRev_Rev1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevDetail" message="tns:IOrderService_OrderRevDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevDetailResponse" message="tns:IOrderService_OrderRevDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevDetail_Rev1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevDetail_Rev1" message="tns:IOrderService_OrderRevDetail_Rev1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevDetail_Rev1Response" message="tns:IOrderService_OrderRevDetail_Rev1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRev" message="tns:IOrderService_OrderAppRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRevResponse" message="tns:IOrderService_OrderAppRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRevDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRevDetail" message="tns:IOrderService_OrderAppRevDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRevDetailResponse" message="tns:IOrderService_OrderAppRevDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevCusSil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevCusSil" message="tns:IOrderService_OrderRevCusSil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevCusSilResponse" message="tns:IOrderService_OrderRevCusSil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevCus_Check">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevCus_Check" message="tns:IOrderService_OrderRevCus_Check_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevCus_CheckResponse" message="tns:IOrderService_OrderRevCus_Check_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevItem_Check">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevItem_Check" message="tns:IOrderService_OrderRevItem_Check_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevItem_CheckResponse" message="tns:IOrderService_OrderRevItem_Check_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevItemQty_Check">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevItemQty_Check" message="tns:IOrderService_OrderRevItemQty_Check_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevItemQty_CheckResponse" message="tns:IOrderService_OrderRevItemQty_Check_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevCenter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRevCenter" message="tns:IOrderService_OrderRevCenter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRevCenterResponse" message="tns:IOrderService_OrderRevCenter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderReg" message="tns:IOrderService_OrderReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRegResponse" message="tns:IOrderService_OrderReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderReg20111013">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderReg20111013" message="tns:IOrderService_OrderReg20111013_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderReg20111013Response" message="tns:IOrderService_OrderReg20111013_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRevAbnormal2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRevAbnormal2" message="tns:IOrderService_OrderAppRevAbnormal2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRevAbnormal2Response" message="tns:IOrderService_OrderAppRevAbnormal2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRevAbnormal1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRevAbnormal1" message="tns:IOrderService_OrderAppRevAbnormal1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRevAbnormal1Response" message="tns:IOrderService_OrderAppRevAbnormal1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdDiscountRevClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdDiscountRevClient" message="tns:IOrderService_OrderProdDiscountRevClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdDiscountRevClientResponse" message="tns:IOrderService_OrderProdDiscountRevClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdDiscountRevProd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdDiscountRevProd" message="tns:IOrderService_OrderProdDiscountRevProd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdDiscountRevProdResponse" message="tns:IOrderService_OrderProdDiscountRevProd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCRevClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRevClient" message="tns:IOrderService_OrderOTCRevClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRevClientResponse" message="tns:IOrderService_OrderOTCRevClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RevOTCProd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/RevOTCProd" message="tns:IOrderService_RevOTCProd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/RevOTCProdResponse" message="tns:IOrderService_RevOTCProd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCRevBudget">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRevBudget" message="tns:IOrderService_OrderOTCRevBudget_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRevBudgetResponse" message="tns:IOrderService_OrderOTCRevBudget_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderOTCReg" message="tns:IOrderService_OrderOTCReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRegResponse" message="tns:IOrderService_OrderOTCReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderRegTEST">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderRegTEST" message="tns:IOrderService_OrderRegTEST_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderRegTESTResponse" message="tns:IOrderService_OrderRegTEST_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRev" message="tns:IOrderService_OrderOTCRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRevResponse" message="tns:IOrderService_OrderOTCRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCRevDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRevDetail" message="tns:IOrderService_OrderOTCRevDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderOTCRevDetailResponse" message="tns:IOrderService_OrderOTCRevDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegPass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegPass" message="tns:IOrderService_OrderAppRegPass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegPassResponse" message="tns:IOrderService_OrderAppRegPass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegPassGetType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegPassGetType" message="tns:IOrderService_OrderAppRegPassGetType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegPassGetTypeResponse" message="tns:IOrderService_OrderAppRegPassGetType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegPassAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegPassAll" message="tns:IOrderService_OrderAppRegPassAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegPassAllResponse" message="tns:IOrderService_OrderAppRegPassAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegPassAlltest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegPassAlltest" message="tns:IOrderService_OrderAppRegPassAlltest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegPassAlltestResponse" message="tns:IOrderService_OrderAppRegPassAlltest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegBukyul_Info">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegBukyul_Info" message="tns:IOrderService_OrderAppRegBukyul_Info_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderAppRegBukyul_InfoResponse" message="tns:IOrderService_OrderAppRegBukyul_Info_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdDiscountReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdDiscountReg" message="tns:IOrderService_OrderProdDiscountReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdDiscountRegResponse" message="tns:IOrderService_OrderProdDiscountReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdDiscountUploadSign">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdDiscountUploadSign" message="tns:IOrderService_OrderProdDiscountUploadSign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdDiscountUploadSignResponse" message="tns:IOrderService_OrderProdDiscountUploadSign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdSilRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdSilRev" message="tns:IOrderService_OrderProdSilRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdSilRevResponse" message="tns:IOrderService_OrderProdSilRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCuscdRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderConCuscdRev" message="tns:IOrderService_OrderConCuscdRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderConCuscdRevResponse" message="tns:IOrderService_OrderConCuscdRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCusRegNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderConCusRegNew" message="tns:IOrderService_OrderConCusRegNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderConCusRegNewResponse" message="tns:IOrderService_OrderConCusRegNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCusReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderConCusReg" message="tns:IOrderService_OrderConCusReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderConCusRegResponse" message="tns:IOrderService_OrderConCusReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCusRegNew_Rev1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderConCusRegNew_Rev1" message="tns:IOrderService_OrderConCusRegNew_Rev1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderConCusRegNew_Rev1Response" message="tns:IOrderService_OrderConCusRegNew_Rev1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCusRegNew_Check_Rev1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderConCusRegNew_Check_Rev1" message="tns:IOrderService_OrderConCusRegNew_Check_Rev1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderConCusRegNew_Check_Rev1Response" message="tns:IOrderService_OrderConCusRegNew_Check_Rev1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderCusGradeRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderCusGradeRev" message="tns:IOrderService_OrderCusGradeRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderCusGradeRevResponse" message="tns:IOrderService_OrderCusGradeRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderCusGradeRevNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderCusGradeRevNew" message="tns:IOrderService_OrderCusGradeRevNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderCusGradeRevNewResponse" message="tns:IOrderService_OrderCusGradeRevNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdListRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdListRev" message="tns:IOrderService_OrderProdListRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdListRevResponse" message="tns:IOrderService_OrderProdListRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdListGradeRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdListGradeRev" message="tns:IOrderService_OrderProdListGradeRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdListGradeRevResponse" message="tns:IOrderService_OrderProdListGradeRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderCusProdGradeRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderCusProdGradeRev" message="tns:IOrderService_OrderCusProdGradeRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderCusProdGradeRevResponse" message="tns:IOrderService_OrderCusProdGradeRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGradeReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdGradeReg" message="tns:IOrderService_OrderProdGradeReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdGradeRegResponse" message="tns:IOrderService_OrderProdGradeReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGradeDelete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdGradeDelete" message="tns:IOrderService_OrderProdGradeDelete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdGradeDeleteResponse" message="tns:IOrderService_OrderProdGradeDelete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderDiscountRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderDiscountRev" message="tns:IOrderService_OrderDiscountRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderDiscountRevResponse" message="tns:IOrderService_OrderDiscountRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderDiscountRevDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderDiscountRevDetail" message="tns:IOrderService_OrderDiscountRevDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderDiscountRevDetailResponse" message="tns:IOrderService_OrderDiscountRevDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PlanProdSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/PlanProdSearch" message="tns:IOrderService_PlanProdSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/PlanProdSearchResponse" message="tns:IOrderService_PlanProdSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PlanProdDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/PlanProdDetail" message="tns:IOrderService_PlanProdDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/PlanProdDetailResponse" message="tns:IOrderService_PlanProdDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdListGradeRevNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdListGradeRevNew" message="tns:IOrderService_OrderProdListGradeRevNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdListGradeRevNewResponse" message="tns:IOrderService_OrderProdListGradeRevNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdListRevNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdListRevNew" message="tns:IOrderService_OrderProdListRevNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdListRevNewResponse" message="tns:IOrderService_OrderProdListRevNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGaListRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdGaListRev" message="tns:IOrderService_OrderProdGaListRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdGaListRevResponse" message="tns:IOrderService_OrderProdGaListRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGradeRegNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdGradeRegNew" message="tns:IOrderService_OrderProdGradeRegNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdGradeRegNewResponse" message="tns:IOrderService_OrderProdGradeRegNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGradeRegSin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdGradeRegSin" message="tns:IOrderService_OrderProdGradeRegSin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdGradeRegSinResponse" message="tns:IOrderService_OrderProdGradeRegSin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGaReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/OrderProdGaReg" message="tns:IOrderService_OrderProdGaReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/OrderProdGaRegResponse" message="tns:IOrderService_OrderProdGaReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoanCusRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/LoanCusRev" message="tns:IOrderService_LoanCusRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/LoanCusRevResponse" message="tns:IOrderService_LoanCusRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanCheck" message="tns:IOrderService_CusLoanCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanCheckResponse" message="tns:IOrderService_CusLoanCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanCalc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanCalc" message="tns:IOrderService_CusLoanCalc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanCalcResponse" message="tns:IOrderService_CusLoanCalc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanReg" message="tns:IOrderService_CusLoanReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanRegResponse" message="tns:IOrderService_CusLoanReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoanCusListRev">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/LoanCusListRev" message="tns:IOrderService_LoanCusListRev_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/LoanCusListRevResponse" message="tns:IOrderService_LoanCusListRev_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanApp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanApp" message="tns:IOrderService_CusLoanApp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanAppResponse" message="tns:IOrderService_CusLoanApp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanAppNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanAppNew" message="tns:IOrderService_CusLoanAppNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanAppNewResponse" message="tns:IOrderService_CusLoanAppNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanReject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CusLoanReject" message="tns:IOrderService_CusLoanReject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CusLoanRejectResponse" message="tns:IOrderService_CusLoanReject_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOrderService" type="tns:IOrderService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CusLoanTeamLeaderReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanTeamLeaderReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanCalc_new">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanCalc_new" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanCalc_new2">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanCalc_new2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanReg_new">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanReg_new" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanReg_new2">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanReg_new2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoanCusRev_new">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/LoanCusRev_new" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoanCusRev_new2">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/LoanCusRev_new2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanTeamLeaderReg_new">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanTeamLeaderReg_new" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdCusGrade">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdCusGrade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdCusGradeReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdCusGradeReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MKTOrderRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MKTOrderReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderProdRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MKTOrderProdRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderKyulRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MKTOrderKyulRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderKyulReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MKTOrderKyulReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderModify">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MKTOrderModify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MKTOrderSil">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MKTOrderSil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Order_Domae_Qty">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/Order_Domae_Qty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Order_Code">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/Order_Code" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevDate">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevDate_Rev1">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevDate_Rev1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRev_Rev1">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRev_Rev1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevDetail">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevDetail_Rev1">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevDetail_Rev1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRevDetail">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRevDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevCusSil">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevCusSil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevCus_Check">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevCus_Check" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevItem_Check">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevItem_Check" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevItemQty_Check">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevItemQty_Check" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRevCenter">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRevCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderReg20111013">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderReg20111013" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRevAbnormal2">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRevAbnormal2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRevAbnormal1">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRevAbnormal1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdDiscountRevClient">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdDiscountRevClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdDiscountRevProd">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdDiscountRevProd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCRevClient">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderOTCRevClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RevOTCProd">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/RevOTCProd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCRevBudget">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderOTCRevBudget" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderOTCReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderRegTEST">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderRegTEST" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderOTCRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderOTCRevDetail">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderOTCRevDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegPass">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRegPass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegPassGetType">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRegPassGetType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegPassAll">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRegPassAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegPassAlltest">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRegPassAlltest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderAppRegBukyul_Info">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderAppRegBukyul_Info" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdDiscountReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdDiscountReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdDiscountUploadSign">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdDiscountUploadSign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdSilRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdSilRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCuscdRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderConCuscdRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCusRegNew">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderConCusRegNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCusReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderConCusReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCusRegNew_Rev1">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderConCusRegNew_Rev1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderConCusRegNew_Check_Rev1">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderConCusRegNew_Check_Rev1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderCusGradeRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderCusGradeRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderCusGradeRevNew">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderCusGradeRevNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdListRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdListRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdListGradeRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdListGradeRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderCusProdGradeRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderCusProdGradeRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGradeReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdGradeReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGradeDelete">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdGradeDelete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDiscountRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderDiscountRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDiscountRevDetail">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderDiscountRevDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlanProdSearch">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/PlanProdSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlanProdDetail">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/PlanProdDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdListGradeRevNew">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdListGradeRevNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdListRevNew">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdListRevNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGaListRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdGaListRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGradeRegNew">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdGradeRegNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGradeRegSin">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdGradeRegSin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderProdGaReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/OrderProdGaReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoanCusRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/LoanCusRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanCheck">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanCalc">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanCalc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanReg">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoanCusListRev">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/LoanCusListRev" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanApp">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanAppNew">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanAppNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CusLoanReject">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CusLoanReject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrderService">
+    <wsdl:port name="BasicHttpBinding_IOrderService" binding="tns:BasicHttpBinding_IOrderService">
+      <soap:address location="http://localhost:52312/Shinyak_WS/OrderService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
